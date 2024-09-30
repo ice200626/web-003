@@ -18,7 +18,7 @@
     <title>Ejemplo de Fondo</title>
     <style>
         body {
-            background-image: url('ruta/a/tu-imagen.jpg');
+            background-image: url('ruta/a/fondo.jpg');
             background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
             background-repeat: no-repeat; /* Evita que la imagen se repita */
             background-position: center; /* Centra la imagen en el fondo */
