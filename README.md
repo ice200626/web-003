@@ -1,24 +1,7 @@
 #web 003
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fondo con Imagen</title>
-    <style>
-        body {
-            background-image: url('ruta/a/tu/fondo.jpg'); /* Ruta de la  }
-    </style>
-</head>
-<body>
-    <h1>¡Hola, mundo!</h1>
-    <p>Esto es un ejemplo de fondo con imagen en HTML.</p>
-</body>
-</html>
 
 
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>Formulario de Contacto</title>
