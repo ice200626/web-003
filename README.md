@@ -26,7 +26,7 @@
 
 
 
-
+<!DOCTYPE html>
 <html>
 <head>
     <title>Formulario de Contacto</title>
