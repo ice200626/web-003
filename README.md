@@ -1,94 +1,58 @@
-<html lang="es"></html>
-<head>
+<html  lang="es"> 
+<head> 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento</title>
-    <style>
-        h1 {
-            text-align: center; /* Centra el texto */
-            color: #ffffff; /* Cambia el color de la letra */
-        }
-    </style>
-</head>
-<body>
-    <h1>Te creamos tu paginas
-    </h1>
-</body>
-</html>
-
-<html lang="es"></html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Centrado</title>
+    <meta  name="ventana gráfica" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
     <style>
         body {
-            display: flex;
-            justify-content: center; /* Centra horizontalmente */
-            align-items: center; /* Centra verticalmente */
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
             font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
         form {
-            background: #fff;
+            background-color: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        input[type="text"], input[type="email"], input[type="submit"] {
+        label {
             display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
             width: 100%;
-            margin-bottom: 10px;
             padding: 10px;
+            margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
         input[type="submit"] {
-            background-color: #3498db;
-            color: #fff;
+            background-color: #5cb85c;
+            color: white;
             border: none;
             cursor: pointer;
         }
         input[type="submit"]:hover {
-            background-color: #2980b9;
+            background-color: #4cae4c;
         }
     </style>
 </head>
 <body>
-    <form action="/submit" method="post">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required>
+<h1>Formulario de Contacto</h1>
+<form action="https://example.com/form-submit" method="POST">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required>
 
-        <input type="submit" value="Enviar">
-    </form>
-</body>
-</html>
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required>
 
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
-<html lang="es"></html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con Fondo</title>
-    <style>
-        body {
-            background-image: url('ruta-de-tu-imagen.jpg'); /* URL de la imagen de fondo */
-            background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-            background-position: center; /* Centra la imagen */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            background-attachment: fixed; /* Fija la imagen al fondo */
-            font-family: Arial, sans-serif;
-        }
-    </style>
-</head>
-<body>
-    <h1>Bienvenido a mi página con fondo</h1>
-    <p>Este es un ejemplo de cómo agregar una imagen de fondo a tu página web.</p>
+    <input type="submit" value="Enviar">
+</form>
+
 </body>
 </html>
