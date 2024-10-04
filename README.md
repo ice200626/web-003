@@ -8,7 +8,7 @@
     <title>Fondo con Imagen</title>
     <style>
         body {
-            background-image: url('ruta/a/tu/imagen.jpg'); /* Ruta de la imagen */
+            background-image: url('ruta/a/tu/fondo.jpg'); /* Ruta de la imagen */
             background-size: cover; /* Cubrir toda la pantalla */
             background-repeat: no-repeat; /* No repetir la imagen */
             background-attachment: fixed; /* Imagen fija al hacer scroll */
