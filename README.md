@@ -5,21 +5,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fondo de Página</title>
+    <title>Fondo con Imagen</title>
     <style>
         body {
-            background-color: #d3d3d3; /* Color de fondo */
+            background-image: url('ruta/a/tu/fondo.jpg'); /* Ruta de la imagen */
+            background-size: cover; /* Cubrir toda la pantalla */
+            background-repeat: no-repeat; /* No repetir la imagen */
+            background-attachment: fixed; /* Imagen fija al hacer scroll */
         }
     </style>
 </head>
 <body>
-    <h1>Hola, mundo!</h1>
-    <p>Esto es un ejemplo de fondo en HTML.</p>
+    <h1>¡Hola, mundo!</h1>
+    <p>Esto es un ejemplo de fondo con imagen en HTML.</p>
 </body>
 </html>
 
-
-
+    
 
 
 
