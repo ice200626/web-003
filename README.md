@@ -10,9 +10,9 @@
         <input type="text" id="nombre" name="nombre"><br>
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email"><br>
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje"></textarea><br>
-        <input type="submit" value="Enviar">
+        <label for="codigo_postal">Código Postal:</label><br>
+        <input type="text" id="codigo_postal" name="codigo_postal"><br>
+        <button type="button" onclick="location.href='https://example.com'">Ir al Hipervínculo</button>
     </form>
 </body>
 </html>
