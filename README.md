@@ -1,3 +1,4 @@
+#web 004
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +13,7 @@
         <input type="email" id="email" name="email"><br>
         <label for="codigo_postal">Código Postal:</label><br>
         <input type="text" id="codigo_postal" name="codigo_postal"><br>
-        <button type="button" onclick="location.href='https://example.com'">Ir al Hipervínculo</button>
+        <button type="button" onclick="location.href='https://example.com'">enviar</button>
     </form>
 </body>
 </html>
