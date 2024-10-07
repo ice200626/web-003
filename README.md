@@ -1,9 +1,7 @@
 
-
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Web con Imagen de Fondo</title>
+    <title></title>
     <style>
         body {
             background-image: url('gif 04.gif');
@@ -14,8 +12,8 @@
     </style>
 </head>
 <body>
-    <h1>Bienvenido a Mi Página Web</h1>
-    <p>Esta es una página con una imagen de fondo.</p>
+    <h1></h1>
+    <p></p>
 </body>
 </html>
 
@@ -35,7 +33,9 @@
     <title>Formulario de Contacto</title>
 </head>
 <body>
-    <h2>Formulario de Contacto</h2>
+    <h2>llena este formulario</h2><p style="font-size: 50px; color: white; font-family: 'Arial Black ', sans-serif; text-align: center;">
+llena estos datos para seguir 
+    </p>
     <form action="/submit_form" method="POST">
         <label for="nombre">Nombre:</label><br>
         <input type="text" id="nombre" name="nombre"><br>
