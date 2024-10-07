@@ -12,23 +12,7 @@
     </style>
 </head>
 <body>
-    <h1></h1>
-    <p></p>
 
-
-
-
-
-
-
-
-
-
-
-
-<html>
-<head>
-    <title>Formulario de Contacto</title>
 </head>
 <body>
     <h2></h2><p style="font-size: 50px; color: white; font-family: 'Arial Black ', sans-serif; text-align: center;">
