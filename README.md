@@ -1,5 +1,33 @@
 
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web con Imagen de Fondo</title>
+    <style>
+        body {
+            background-image: url('gif 04.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a Mi Página Web</h1>
+    <p>Esta es una página con una imagen de fondo.</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
 
 
 <html>
