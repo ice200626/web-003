@@ -30,7 +30,7 @@
         <input type="text" id="codigo_postal" name="codigo_postal"><br>
         <button type="button" onclick="location.href='https://ice200626.github.io/web-004/'">enviar</button>
     </form>
-</body>
+
 
 
 <html lang="es">
