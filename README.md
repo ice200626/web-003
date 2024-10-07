@@ -55,7 +55,7 @@
     <title>Botón con Hipervínculo</title>
 </head>
 <body>
-    <a href="https://ice200626.github.io/web-002/" class="boton">Haz clic aquí</a>
+    <a href="https://ice200626.github.io/web-002/" class="boton">atras</a>
 
     <style>
         .boton {
