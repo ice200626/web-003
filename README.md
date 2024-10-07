@@ -36,7 +36,7 @@
     <h2>llena este formulario</h2><p style="font-size: 50px; color: white; font-family: 'Arial Black ', sans-serif; text-align: center;">
     </p>
     <form action="/submit_form" method="POST">
-        <p style="font-size: 50px; color: white; font-family: 'Arial Black ', sans-serif; text-align: center;"> Nombre
+        <p style="font-size: 10px; color: white; font-family: 'Arial Black ', sans-serif; text-align: left;"> Nombre
     </p>
         <input type="text" id="nombre" name="nombre"><br>
         <label for="email">Email:</label><br>
