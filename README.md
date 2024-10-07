@@ -15,7 +15,7 @@
         <input type="email" id="email" name="email"><br>
         <label for="codigo_postal">Código Postal:</label><br>
         <input type="text" id="codigo_postal" name="codigo_postal"><br>
-        <button type="button" onclick="location.href='https://example.com'">enviar</button>
+        <button type="button" onclick="location.href='https://ice200626.github.io/web-004/'">enviar</button>
     </form>
 </body>
 </html>
