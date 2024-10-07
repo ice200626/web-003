@@ -33,7 +33,7 @@
     <title>Formulario de Contacto</title>
 </head>
 <body>
-    <h2>llena este formulario</h2><p style="font-size: 50px; color: white; font-family: 'Arial Black ', sans-serif; text-align: center;">
+    <h2></h2><p style="font-size: 50px; color: white; font-family: 'Arial Black ', sans-serif; text-align: center;">
     </p>
     <form action="/submit_form" method="POST">
         <p style="font-size: 25px; color: white; font-family: 'Arial Black ', sans-serif; text-align: left;"> Nombre
