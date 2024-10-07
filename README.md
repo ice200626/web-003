@@ -34,10 +34,10 @@
 </head>
 <body>
     <h2>llena este formulario</h2><p style="font-size: 50px; color: white; font-family: 'Arial Black ', sans-serif; text-align: center;">
-llena estos datos para seguir 
     </p>
     <form action="/submit_form" method="POST">
-        <label for="nombre">Nombre:</label><br>
+        <p style="font-size: 50px; color: white; font-family: 'Arial Black ', sans-serif; text-align: center;"> Nombre
+    </p>
         <input type="text" id="nombre" name="nombre"><br>
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email"><br>
