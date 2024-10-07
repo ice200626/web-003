@@ -36,12 +36,15 @@
     <h2>llena este formulario</h2><p style="font-size: 50px; color: white; font-family: 'Arial Black ', sans-serif; text-align: center;">
     </p>
     <form action="/submit_form" method="POST">
-        <p style="font-size: 10px; color: white; font-family: 'Arial Black ', sans-serif; text-align: left;"> Nombre
+        <p style="font-size: 25px; color: white; font-family: 'Arial Black ', sans-serif; text-align: left;"> Nombre
     </p>
         <input type="text" id="nombre" name="nombre"><br>
-        <label for="email">Email:</label><br>
+     <form action="/submit_form" method="POST">
+        <p style="font-size: 25px; color: white; font-family: 'Arial Black ', sans-serif; text-align: left;"> Email
+    </p>
         <input type="email" id="email" name="email"><br>
-        <label for="codigo_postal">Código Postal:</label><br>
+      <p style="font-size: 25px; color: white; font-family: 'Arial Black ', sans-serif; text-align: left;"> Codigo postal
+    </p>
         <input type="text" id="codigo_postal" name="codigo_postal"><br>
         <button type="button" onclick="location.href='https://ice200626.github.io/web-004/'">enviar</button>
     </form>
