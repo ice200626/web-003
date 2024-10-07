@@ -1,5 +1,5 @@
 
-<html>
+
 <head>
     <title></title>
     <style>
@@ -13,7 +13,7 @@
 </head>
 <body>
 
-</head>
+
 <body>
     <h2></h2><p style="font-size: 50px; color: white; font-family: 'Arial Black ', sans-serif; text-align: center;">
     </p>
