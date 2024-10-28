@@ -1,7 +1,7 @@
 
 
 <head>
-    <title></title>
+    <title>por favor ingrese los datos que le son requeridos </title>
     <style>
         body {
             background-image: url('fondo n1.jpg');
