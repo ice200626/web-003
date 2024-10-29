@@ -1,38 +1,53 @@
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 
-# Configurar los detalles del correo electrónico
-sender_email = "your-email@example.com"
-receiver_email = "receiver-email@example.com"
-password = "your-password"
-
-# Crear el mensaje de correo electrónico
-message = MIMEMultipart("alternative")
-message["Subject"] = "Ejemplo de correo electrónico HTML"
-message["From"] = sender_email
-message["To"] = receiver_email
-
-# Agregar el contenido de texto plano y HTML
-text = "Hola,\n\nEste es un ejemplo de correo electrónico."
-html = """\
-<html>
-  <body>
-    <p>Hola,<br>
-       Este es un <b>ejemplo</b> de correo electrónico HTML.
-    </p>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <form id="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("TU_USER_ID");
+        })();
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('TU_SERVICE_ID', 'TU_TEMPLATE_ID', this)
+                .then(function() {
+                    alert('Correo enviado!');
+                }, function(error) {
+                    alert('Error al enviar el correo: ' + JSON.stringify(error));
+                });
+        });
+    </script>
+</body>
 </html>
-"""
-message.attach(MIMEText(text, "plain"))
-message.attach(MIMEText(html, "html"))
 
-# Enviar el correo electrónico
-server = smtplib.SMTP("smtp.example.com", 587)
-server.starttls()
-server.login(sender_email, password)
-server.sendmail(sender_email, receiver_email, message.as_string())
-server.quit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
