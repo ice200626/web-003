@@ -1,40 +1,38 @@
-<!DOCTYPE html>
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
+# Configurar los detalles del correo electrónico
+sender_email = "your-email@example.com"
+receiver_email = "receiver-email@example.com"
+password = "your-password"
+
+# Crear el mensaje de correo electrónico
+message = MIMEMultipart("alternative")
+message["Subject"] = "Ejemplo de correo electrónico HTML"
+message["From"] = sender_email
+message["To"] = receiver_email
+
+# Agregar el contenido de texto plano y HTML
+text = "Hola,\n\nEste es un ejemplo de correo electrónico."
+html = """\
 <html>
-<head>
-  <title>Simple Form</title>
-  <style>
-    #userInput { margin-bottom: 1em; }
-    #displayArea { border: 1px solid #000; padding: 1em; }
-  </style>
-</head>
-<body>
-  <div id="userInput">
-    <label for="name">Name: </label><br>
-    <input type="text" id="name" name="name"><br>
-    <label for="email">Email: </label><br>
-    <input type="email" id="email" name="email"><br>
-    <label for="message">Message: </label><br>
-    <textarea id="message" name="message"></textarea><br>
-    <input type="button" value="Display Input" onclick="displayInput()">
-  </div>
-  <div id="displayArea"></div>
-
-  <script>
-    function displayInput() {
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-      var message = document.getElementById('message').value;
-      var displayArea = document.getElementById('displayArea');
-
-      displayArea.innerHTML = '<p><strong>Name:</strong> ' + name + '</p>' +
-                               '<p><strong>Email:</strong> ' + email + '</p>' +
-                               '<p><strong>Message:</strong> ' + message + '</p>';
-    }
-  </script>
-</body>
+  <body>
+    <p>Hola,<br>
+       Este es un <b>ejemplo</b> de correo electrónico HTML.
+    </p>
+  </body>
 </html>
+"""
+message.attach(MIMEText(text, "plain"))
+message.attach(MIMEText(html, "html"))
 
-
+# Enviar el correo electrónico
+server = smtplib.SMTP("smtp.example.com", 587)
+server.starttls()
+server.login(sender_email, password)
+server.sendmail(sender_email, receiver_email, message.as_string())
+server.quit()
 
 
 
