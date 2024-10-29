@@ -14,28 +14,16 @@
 <body>
 
 
-<body>
-    <h2></h2><p style="font-size: 50px; color: white; font-family: 'Arial Black ', sans-serif; text-align: center;">
-    </p>
-    <form action="/submit_form" method="POST">
-        <p style="font-size: 25px; color: white; font-family: 'Arial Black ', sans-serif; text-align: left;"> Nombre
-    </p>
-        <input type="text" id="nombre" name="nombre"><br>
-     <form action="/submit_form" method="POST">
-        <p style="font-size: 25px; color: white; font-family: 'Arial Black ', sans-serif; text-align: left;"> Email
-    </p>
-        <input type="email" id="email" name="email"><br>
-      <p style="font-size: 25px; color: white; font-family: 'Arial Black ', sans-serif; text-align: left;"> Codigo postal
-    </p>
-        <input type="text" id="codigo_postal" name="codigo_postal"><br>
-        <button type="button" onclick="location.href='https://ice200626.github.io/web-004/'">enviar</button>
-    </form>
-
-
-
-
-
-
+<form action="/path/to/mailer.php" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message"></textarea><br>
+  <input type="submit" value="Submit">
+  <output name="output"></output>
+</form>
 
 
 
