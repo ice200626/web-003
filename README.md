@@ -80,7 +80,6 @@
 </head>
 <body>
     <a href="https://ice200626.github.io/web-002/" class="boton">atras</a>
-
     <style>
         .boton {
             display: inline-block;
@@ -92,8 +91,37 @@
             border-radius: 5px; /* Bordes redondeados */
             transition: background-color 0.3s ease; /* Efecto al pasar el mouse */
         }
-
         .boton:hover {
             background-color: #005f6b; /* Color al pasar el mouse */
         }
     </style>
+    
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Fondo</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Color de fondo */
+            background-image: url('fondo n1.jpg'); /* Imagen de fondo */
+            background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            padding: 50px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Hola Mundo!</h1>
+</body>
+</html>
+
+
