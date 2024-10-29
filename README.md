@@ -1,45 +1,59 @@
 
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
+    <h1>LLena nuestro fornumalario</h1>
     <form id="contact-form">
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" required></textarea><br>
-        <button type="submit">Enviar</button>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">comentario</label>
+        <textarea id="message" name="message" required></textarea>
+        <a href="https://ice200626.github.io/web-002/" class="boton">enviar</a>
     </form>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function(){
-            emailjs.init("TU_USER_ID");
-        })();
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            emailjs.sendForm('TU_SERVICE_ID', 'TU_TEMPLATE_ID', this)
-                .then(function() {
-                    alert('Correo enviado!');
-                }, function(error) {
-                    alert('Error al enviar el correo: ' + JSON.stringify(error));
-                });
-        });
-    </script>
 </body>
 </html>
-
-
-
-
-
-
-
 
 
 
