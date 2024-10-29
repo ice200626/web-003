@@ -1,29 +1,51 @@
-
-
+<!DOCTYPE html>
+<html>
 <head>
-    <title>por favor ingrese los datos que le son requeridos </title>
-    <style>
-        body {
-            background-image: url('fondo n1.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-    </style>
+  <title>Simple Form</title>
+  <style>
+    #userInput { margin-bottom: 1em; }
+    #displayArea { border: 1px solid #000; padding: 1em; }
+  </style>
 </head>
 <body>
+  <div id="userInput">
+    <label for="name">Name: </label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email: </label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="message">Message: </label><br>
+    <textarea id="message" name="message"></textarea><br>
+    <input type="button" value="Display Input" onclick="displayInput()">
+  </div>
+  <div id="displayArea"></div>
+
+  <script>
+    function displayInput() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+      var displayArea = document.getElementById('displayArea');
+
+      displayArea.innerHTML = '<p><strong>Name:</strong> ' + name + '</p>' +
+                               '<p><strong>Email:</strong> ' + email + '</p>' +
+                               '<p><strong>Message:</strong> ' + message + '</p>';
+    }
+  </script>
+</body>
+</html>
 
 
-<form action="/path/to/mailer.php" method="post">
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name"><br>
-  <label for="email">Email:</label><br>
-  <input type="email" id="email" name="email"><br>
-  <label for="message">Message:</label><br>
-  <textarea id="message" name="message"></textarea><br>
-  <input type="submit" value="Submit">
-  <output name="output"></output>
-</form>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
