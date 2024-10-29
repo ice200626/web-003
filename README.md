@@ -50,7 +50,7 @@
         <input type="email" id="email" name="email" required>
         <label for="message">comentario</label>
         <textarea id="message" name="message" required></textarea>
-        <a href="https://ice200626.github.io/web-002/" class="boton">enviar</a>
+        <a href="https://ice200626.github.io/web-004/" class="boton">enviar</a>
     </form>
 </body>
 </html>
