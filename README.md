@@ -96,7 +96,7 @@
         }
     </style>
     
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -120,7 +120,7 @@
     </style>
 </head>
 <body>
-    <h1>¡Hola Mundo!</h1>
+    <h1></h1>
 </body>
 </html>
 
